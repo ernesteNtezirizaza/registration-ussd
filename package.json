@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.3",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2",
+    "ussd-builder": "^1.2.5",
+    "ussd-menu-builder": "^1.2.0"
+  }
+}
