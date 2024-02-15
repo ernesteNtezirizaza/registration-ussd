@@ -4,7 +4,7 @@
   "description": "Project for ussd registration",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^16.4.3",
