@@ -15,6 +15,8 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+let dataToSave = {} // Declare dataToSave here
+
 let menu = new UssdMenu()
 menu.startState({
   run: () => {
@@ -33,7 +35,7 @@ menu.startState({
 })
 menu.state('register', {
   run: () => {
-    menu.con('Before we go ahead, whats your name?')
+    menu.con("Before we go ahead, what's your name?")
   },
   next: {
     '*[a-zA-Z]+': 'register.tickets',
