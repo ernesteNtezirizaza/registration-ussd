@@ -1,4 +1,11 @@
 {
+  "name": "registration-ussd",
+  "version": "1.0.0",
+  "description": "Project for ussd registration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "dotenv": "^16.4.3",
     "express": "^4.18.2",
