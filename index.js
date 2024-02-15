@@ -20,7 +20,7 @@ menu.startState({
   run: () => {
     // use menu.con() to send response without terminating session
     menu.con(
-      'Welcome! Ready to register for the Zizi Conference:' +
+      "Welcome! Ready to register for the Tbg's Conference:" +
         '\n1. Get started' +
         '\n2. Get out!'
     )
