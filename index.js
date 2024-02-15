@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const UssdMenu = require('ussd-menu-builder')
+const Data = require('./models') // Import the Data model
 const mongoString = process.env.DATABASE_URL
 mongoose.connect(mongoString)
 const database = mongoose.connection
@@ -59,7 +60,8 @@ menu.state('end', {
     dataToSave.tickets = tickets
     console.log(dataToSave)
     // Save the data
-    const data = new Model({
+    const data = new Data({
+      // Use Data model here
       name: dataToSave.name,
       tickets: dataToSave.tickets,
     })
