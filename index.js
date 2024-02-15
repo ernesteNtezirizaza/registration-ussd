@@ -73,7 +73,7 @@ menu.state('quit', {
   },
 })
 // Registering USSD handler with Express
-app.get('/ussd', (req, res) => {
+app.post('/ussd', (req, res) => {
   menu.run(req.body, (ussdResult) => {
     res.send(ussdResult)
   })
